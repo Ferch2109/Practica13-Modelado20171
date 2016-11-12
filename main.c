@@ -37,49 +37,55 @@ int main()
 }
 
 int cmp_int( const void *a, const void *b ){
-
+	//hacemos el cast
 	const int *x = (const int *)a;
 	const int *y = (const int *)b;
-
+	//si es mas pequeño el primero que el segundo regresa -1
 	if( *x < *y )
 		return -1;
+	//si es mas grande el primero que el segundo regresa 1
 	if( *x > *y )
 		return 1;
-
+	//si son iguales regresa 0
 	return 0;
 
 }
 
 int cmp_double( const void *a, const void *b ){
-
+	//hacemos el cast
 	const double *x = (const double *)a;
 	const double *y = (const double *)b;
 
+	//si es mas pequeño el primero que el segundo regresa -1
 	if( *x < *y )
 		return -1;
+	//si es mas grande el primero que el segundo regresa 1
 	if( *x > *y )
 		return 1;
-
+	//si son iguales regresa 0
 	return 0;
 
 
 }
 //imprime una lista de enteros de tamaño num
 void imprime_int( int *arreglo, size_t num ){
-
+	//contador
 	int i;
+	//por cada elemento en el arreglo lo imprimimos
 	for( i = 0; i < num ; i++ )
 		printf( "%d ", arreglo[i] );
+	//doble salto de linea para que sea mas visible el resultado
 	printf("\n\n");
 
 }
 
 void imprime_double(double *arreglo, size_t num){
-
+//contador
 	int i;
-
+	//por cada elemento en el arreglo lo imprimimos
 	for( i = 0; i < num ; i++ )
 		printf( "%f ", arreglo[i] );
+	//doble salto de linea para que sea mas visible el resultado
 	printf("\n\n");
 
 }
