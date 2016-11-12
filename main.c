@@ -67,7 +67,7 @@ int cmp_double( const void *a, const void *b ){
 
 
 }
-//imprime una lista de enteros de tamaño num
+
 void imprime_int( int *arreglo, size_t num ){
 	//contador
 	int i;
